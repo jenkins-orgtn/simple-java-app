@@ -1,11 +1,11 @@
 package com.example;
 
+import static spark.Spark.*;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello from App!");
-    }
+        port(8080); // Bind to port 8080
 
-    public int add(int a, int b) {
-        return a + b;
+        get("/", (req, res) -> "Hello from SparkJava!");
     }
 }
