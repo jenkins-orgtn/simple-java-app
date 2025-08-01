@@ -19,7 +19,7 @@ jobs:
         run: mvn test
 
       - name: Generate Reports 
-        run: mvn clean package
+        run: mvn package
 
       
   docker:
