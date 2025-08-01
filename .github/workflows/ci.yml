@@ -18,7 +18,7 @@ jobs:
       - name: Test
         run: mvn test
 
-      - name: Generate Reports
+      - name: Generate Reports 
         run: mvn package
 
       
